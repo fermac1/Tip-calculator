@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h3>SPLI<br>TTER</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form action="">
+                    <div class="form-group">
+                        <label for="bill" class="title">Bill</label>
+                        
+                        <input type="text" class="form-control bill" placeholder="0">
+                    </div>
+               
+                    <div class="form-group">
+
+                        <label class="title">Select Tip %</label><br>
+                        <div class="tip-btn">
+                            <input type="button" class="percentage" value="5%" id="percent_5">
+                            <input type="button" class="percentage" value="10%" id="percent_10">
+                            <input type="button" class="percentage" value="15%" id="percent_15">
+                            <input type="button" class="percentage" value="25%" id="percent_25">
+                            <input type="button" class="percentage" value="50%" id="percent_50">
+
+                            <input type="text" class="form-control custom" placeholder="Custom">
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="people" class="title">Number of People</label>
+                        <span id="error_msg"></span>
+
+                        <input type="text" class="form-control people" placeholder="0">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right-col">
+                <div class="row price-row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 price-tag">
+                        <span class="amt">Tip Amount</span><br>
+                        <span class="per-person">/ person</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 price-output tip-output">
+                        $0.00
+                    </div>
+                </div>
+                <div class="row price-row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 price-tag">
+                        <span class="amt">Total</span><br>
+                        <span class="per-person">/ person</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 price-output total-output">
+                        $0.00
+                    </div>
+                </div>
+                <button class="btn reset-btn form-control">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
